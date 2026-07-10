@@ -4,7 +4,7 @@ A web application for tracking fleet vehicles (trucks and small vehicles) and ca
 loading/unloading operations. Built for a single operator, with an architecture that
 leaves room for a future driver mobile app.
 
-[![pipeline](https://img.shields.io/badge/CI-GitLab-orange)](./.gitlab-ci.yml)
+[![CI](https://img.shields.io/badge/CI-GitHub_Actions-blue)](./.github/workflows/ci.yml)
 [![python](https://img.shields.io/badge/python-3.11%2B-blue)]()
 [![node](https://img.shields.io/badge/node-20%2B-green)]()
 
@@ -39,7 +39,7 @@ leaves room for a future driver mobile app.
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | System design, layering, data model |
 | [docs/API.md](docs/API.md) | REST endpoint reference |
 | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Docker & production deployment |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Branching, commits, merge requests |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Branching, commits, pull requests |
 
 ## Quick Start
 
@@ -78,7 +78,7 @@ project_1/
 ├── docs/        # Project documentation
 ├── Dockerfile
 ├── docker-compose.yml
-└── .gitlab-ci.yml
+└── .github/workflows/ci.yml
 ```
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the detailed structure.

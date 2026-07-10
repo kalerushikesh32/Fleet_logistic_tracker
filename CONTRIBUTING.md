@@ -11,7 +11,7 @@ See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for local setup.
 - `main` — always deployable. Do not push directly.
 - Feature branches: `feature/<short-description>`
 - Bug fixes: `fix/<short-description>`
-- Create a branch from `main`, push, then open a Merge Request.
+- Create a branch from `main`, push, then open a Pull Request.
 
 ## Commits
 
@@ -27,20 +27,20 @@ test(cargo): cover positive-weight validation
 
 Keep commits focused and atomic.
 
-## Merge Requests
+## Pull Requests
 
-Before opening an MR:
+Before opening a PR:
 
 1. Rebase on the latest `main`.
-2. Run the quality gates locally (they also run in CI):
+2. Run the quality gates locally (they also run in CI via GitHub Actions):
    ```bash
    cd backend && ruff check . && black --check . && pytest
    cd frontend && npm run lint && npm test && npm run build
    ```
-3. Fill in the MR description: what changed, why, and how you tested it.
+3. Fill in the PR description: what changed, why, and how you tested it.
 4. Link the related issue.
 
-MRs require a green pipeline and at least one review before merge.
+PRs require a green CI run and at least one review before merge.
 
 ## Code Style
 
